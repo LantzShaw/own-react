@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./own-react/index.js"></script> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+</body>
+
+<script type="module">
+    // const element = {
+    //     type: 'div',
+    //     props: {
+    //         title: 'hello',
+    //         children: 'Lantz'
+    //     }
+    // }
+
+    // const container = document.querySelector('#root')
+
+    // const node = document.createElement('div')
+    // node['title'] = element.props.title
+
+    // const text = document.createTextNode('')
+    // text['nodeValue'] = element.props.children
+
+    // node.appendChild(text)
+    // container.appendChild(node)
+
+    // NOTE: 这里要引入具体的.js文件 省略后缀需要webpack这些东西
+    import Ownreact from './own-react/index.js'
+
+    const element = Ownreact.createElement('div', null, 'Lantz Shaw')
+
+    Ownreact.render(element, document.querySelector('#root'))
+</script>
+
+</html>
