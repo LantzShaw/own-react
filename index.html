@@ -11,7 +11,7 @@
 
 <body>
     <div id="root"></div>
-
+    <script type="module" src="./src/main.js"></script>
 </body>
 
 <script type="module">
@@ -35,11 +35,11 @@
     // container.appendChild(node)
 
     // NOTE: 这里要引入具体的.js文件 省略后缀需要webpack这些东西
-    import Ownreact from './own-react/index.js'
+    // import Ownreact from './own-react/index.js'
 
-    const element = Ownreact.createElement('div', null, 'Lantz Shaw')
+    // const element = Ownreact.createElement('div', null, 'Lantz Shaw')
 
-    Ownreact.render(element, document.querySelector('#root'))
+    // Ownreact.render(element, document.querySelector('#root'))
 </script>
 
 </html>
